@@ -34,7 +34,6 @@ function switchTab(clickedTab) {
     }
   }
 }
-
 userTab.addEventListener("click", () => {
   // pass clicked tab sa input parameter
   switchTab(userTab);
@@ -58,7 +57,7 @@ function getfromSessionStorage() {
 
 async function fetchUserWeatherInfo(coordinates) {
   const { lat, lon } = coordinates;
-  // make grant container invisible
+
   grantAccessContainer.classList.remove("active");
   // make loader visible
   loadingScreen.classList.add("active");
